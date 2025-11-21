@@ -35,7 +35,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+    border: 10px solid wheat;
     background-color: wheat;
+    border-radius: 15px;
 }
 
 main {
@@ -67,7 +69,7 @@ main h2 {
 main p {
     font-style: italic;
     font-size: 1.2rem;
-    line-height: 1.5;
+    margin-bottom: 8px;
     color: white;
 }
 
