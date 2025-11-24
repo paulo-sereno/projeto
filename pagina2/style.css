@@ -41,28 +41,47 @@ body {
 }
 
 main {
-    margin: 60px auto;
-    padding: 20px;
-    width: 50%;
-    min-width: 650px;
+    padding-top: 150px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
-    flex-grow: 1;    
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    }
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.esquerda, .direita {
+    width: 48%;
+    margin: 0;
+}
+
+.esquerda {
+    text-align: center;
+}
+
+.followme img {
+    max-width: 100%;
+    height: auto;
+}
 
 main h1 {
     text-transform: uppercase;
+    text-align: center;
     font-size: 7rem;
     font-weight: 700;
     color: mediumaquamarine;
+    margin-top: 0;
     margin-bottom: 20px;
 }
 
 .sobremim {
+    text-align: center;
     font-size: 1.5rem;
     color: wheat;
+}
+
+.followme {
+    text-align: center;
 }
 
 main p {
