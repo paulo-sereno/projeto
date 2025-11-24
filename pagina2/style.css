@@ -6,6 +6,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2QyaDIzcWd0dDVuYWVlYzFxd2g1dWN3cDhpZTJ5MTMyYTRzZ3NkMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3vRnoppYtfEbemBO/giphy.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .navigation {
@@ -16,6 +20,7 @@ body {
     left: 0;
     width: 100%;
     border-bottom: 3px solid wheat;
+    z-index: 100;
 }
 
 .navigation nav ul {
@@ -41,13 +46,15 @@ body {
 }
 
 main {
-    padding-top: 150px;
+    padding: 80px 0;
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-grow: 1;
+    background-color: black;
 }
 
 .esquerda, .direita {
@@ -57,6 +64,21 @@ main {
 
 .esquerda {
     text-align: center;
+    margin: 30px 0;
+}
+
+.direita {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: space-between;
+    margin: 150px 0;
+}
+
+.direita p {
+    margin: 0;
+    padding: 0;
 }
 
 .followme img {
@@ -86,10 +108,11 @@ main h1 {
 
 main p {
     font-size: 1.2rem;
-    margin-bottom: 8px;
+    line-height: 1.5;
     color: white;
     align-items: center;
-    line-height: 1.5;
+    margin: 0;
+    padding: 8px 0;
 }
 
 footer p {
@@ -98,4 +121,3 @@ footer p {
     border-top: 3px solid wheat;
     padding-top: 15px;
 }
-
