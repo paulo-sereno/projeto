@@ -48,8 +48,8 @@ main {
     padding: 80px 0;
     margin: 0 auto;
     width: 90%;
+    max-width: 1200px;
     flex-grow: 1;
-    background-color: brown; 
  }
 
 h1 {
@@ -60,7 +60,6 @@ h1 {
     color: mediumaquamarine;
     margin: 0 0 20px 0;
     display: block;
-    background-color: blue;
 }
 
 .area {
@@ -69,48 +68,150 @@ h1 {
 }
 
 .contactos {
-    background-color: blueviolet;
+    background-color: black;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     width: 35%;
-    margin: 0 20px;
+    max-height: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 10px;
 }
 
 .contactos h2 {
-    text-align: center;
     font-size: 1.5rem;
     color: wheat;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 .contactos a{
+    font-size: 1.2rem;
     color: black;
-    background-color: wheat;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.linkedin {
+    display: flex;
+    justify-items: left;
+    margin-bottom: 15px;
     border: 1px solid black;
     border-radius: 8px;
-    padding: 5px 15px;
+    cursor: pointer;
+    background-color: wheat;
+    max-width: 135px;
+}
+
+.linkedin:hover{
+    color: black;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 8px;
     cursor: pointer;
 }
 
-.contactos a:hover{
-    color: black;
-    background-color: wheat;
-    text-decoration: none;
+.linkedin:active{
+    background-color: rgb(158, 143, 115);
+    transform: scale(0.99);
+}
+
+.github {
+    display: flex;
+    justify-items: left;
     border: 1px solid black;
     border-radius: 8px;
-    padding: 5px 15px;
+    cursor: pointer;
+    background-color: wheat;
+    max-width: 135px;
+}
+
+.github:hover{
+    color: black;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 8px;
     cursor: pointer;
 }
 
-
+.github:active{
+    background-color: rgb(158, 143, 115);
+    transform: scale(0.99);
+}
 
 .formulario {
-    background-color: cadetblue;
+    background-color: black;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     width: 65%;
-    margin: 0 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 15px;
+}
 
+.formulario h2 {
+    font-size: 1.5rem;
+    color: wheat;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.email,
+.name,
+.context,
+.description {
+    padding-bottom: 20px;
+}
+
+.formulario label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: wheat;
+}
+
+.formulario input {
+    font-size: 1.2rem;
+    background-color: wheat;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: wheat;
+    box-sizing: border-box;
+    resize: vertical;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.submit {
+    background-color: wheat;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    color: black;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit:active {
+  background-color: rgb(158, 143, 115);
+  transform: scale(0.99);
 }
 
 footer p {
